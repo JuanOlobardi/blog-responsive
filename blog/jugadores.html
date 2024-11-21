@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugadores Históricos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .jugadores-header {
+            font-size: 2em;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .jugadores-lista {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .jugadores-lista ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .jugadores-lista li {
+            margin-bottom: 10px;
+        }
+
+        .jugadores-lista h3 {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 30px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        .webb {
+            width: 100%;
+            max-width: 400px;
+            margin: 20px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+       
+        @media (max-width: 768px) {
+            
+            header h1 {
+                font-size: 2em;
+            }
+
+          
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .container {
+                grid-template-columns: 1fr; 
+            }
+
+     
+            .jugadores-header {
+                font-size: 1.8em;
+            }
+
+            .jugadores-lista {
+                font-size: 1em;
+            }
+            .webb {
+                max-width: 100%;  
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>JUGADORES HISTÓTICOS DE RUGBY</h1>
+            <nav>
+                <ul>
+                    <li><a href="blog.html">INICIO</a></li>
+                    <li><a href="historia.html">HISTORIA</a></li>
+                    <li><a href="equipos.html">EQUIPOS</a></li>
+                    <li><a href="formulario.html">FORMULARIO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <h1 class="jugadores-header">Algunos de los miembros del Salón de la Fama del Rugby Mundial son:</h1>
+
+        <img class="webb" src="salon.jpg" alt="">
+
+        <div class="jugadores-lista">
+            <ul>
+                <li>- Hugo Porta: Uno de los históricos de Los Pumas, fue incluido en 2008.</li>
+                <li>- Agustín Pichot: Fue introducido en 2011.</li>
+                <li>- Felipe Contepomi: Ingresó en 2017.</li>
+                <li>- Juan Martín Hernández: El "Mago" fue el cuarto argentino en ser reconocido en 2023.</li>
+                <li>- Dan Carter: El máximo anotador de puntos en la historia del rugby internacional.</li>
+                <li>- Thierry Dusautoir: En 2011 fue nombrado Jugador del Año de World Rugby 15.</li>
+                <li>- George Smith: Se convertiría posiblemente en la primera superestrella del rugby como ala abierto.</li>
+                <li>- Bryan Habana: Miembro del Salón de la Fama de World Rugby.</li>
+                <li>- George Nepia: Destacado fullback de los All Blacks.</li>
+                <li>- Tony O'Reilly: Considerado el mejor wing europeo del siglo XX.</li>
+                <li>- Frik du Preez: Estimado el mejor segunda línea africano del siglo XX.</li>
+            </ul>
+        </div>
+
+        <h3 class="jugadores-lista">
+            El Salón de la Fama del Rugby Mundial reconoce a jugadores, entrenadores, administradores, árbitros de partidos, instituciones y otras personas.
+        </h3>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Jugadores Históricos del Rugby. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

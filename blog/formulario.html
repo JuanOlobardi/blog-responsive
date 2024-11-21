@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <style>        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+            
+        header {
+            background-color: #333;
+            color: #fff;
+             padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+                
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .container p {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+
+        .form-container {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .form-container h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+
+        @media (max-width: 768px) {
+            
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .container {
+                grid-template-columns: 1fr;  
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>FORMULARIO</h1>
+            <nav>
+                <ul>
+                    <li><a href="blog.html">INICIO</a></li>
+                    <li><a href="historia.html">HISTORIA</a></li>
+                    <li><a href="jugadores.html">JUGADORES</a></li>
+                    <li><a href="equipos.html">EQUIPOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <h3>Formulario de Contacto</h3>
+        <form action="https://formspree.io/f/yourFormID" method="POST">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" name="subject" placeholder="Motivo del mensaje" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </div>
+
+    
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 Blog de Rugby. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

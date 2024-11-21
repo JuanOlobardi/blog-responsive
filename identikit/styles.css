@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(158, 201, 238); text-align: center;
+}
+
+h1 {
+    background-color: blue; font-family: 'Courier New', Courier, monospace; text-align: center;color: gold
+}
+
+h2 { 
+    background-color: gold; font-family: 'Courier New', Courier, monospace; text-align: center;color: blue
+}
+
+h3 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif ; text-align: center;color: rgb(0, 0, 0)
+}
+
+h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: blue;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+ul li a:hover {
+    border-bottom: 3px solid rgb(255, 238, 0);
+}
+
